@@ -1,0 +1,10 @@
+<div class="form-gorup">
+    <label for="todo">Add todo</label>
+    <input type="text" #todo class="form-control" id="todo">
+  </div>
+  
+  <button
+  (click)="ontoAdd(todo)"
+  class="btn btn-outline-success btn-block mt-4"
+  [disabled]="todo.value.length ==0"
+  >Add Todo</button>

@@ -1,0 +1,31 @@
+
+
+
+<ul class="nav nav-pills">
+    <li class="nav link" *ngFor="let tab of tabArr">
+        <a href="javascript"
+        (click)="selctedFramwork=tab.Tabtitle"
+        [ngClass]="{
+            active:selctedFramwork==='angular'
+        }"
+         class="nav-link text-uppercase">{{tab.Tabtitle}}
+
+        </a>
+    </li>
+    <li class="nav link">
+        <a href="javascript"
+        [ngClass]="{
+            active:selctedFramwork==='react'
+        }"
+         class="nav-link">React
+        </a>
+    </li>
+    <li class="nav link">
+        <a href="javascript"
+        [ngClass]="{
+            active:selctedFramwork==='bootstrap'
+        }"
+         class="nav-link">Bootstrap
+        </a>
+    </li>
+</ul>
